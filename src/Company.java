@@ -63,7 +63,7 @@ public class Company {
             String nameIn = systemInScanner.nextLine();
             String nameOut = "";
 
-        if (nameIn.contains("[0-9]+") == false && nameIn.length() > 2) {
+        if (Pattern.matches("[0-9]+", nameIn) == false) {
             nameOut = nameIn;
         }
         else{
